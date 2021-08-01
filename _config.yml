@@ -3,32 +3,32 @@ version: 4.0.0
 # Icarus theme variant, can be "default" or "cyberpunk"
 variant: default
 # Path or URL to the website's logo
-logo: https://cdn.jsdelivr.net/gh/removeif/removeif-demo@latest/img/logo.png #/img/logo.svg
+logo: /img/logo.svg #/img/logo.svg
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon: https://cdn.jsdelivr.net/gh/removeif/removeif-demo@latest/img/favicon.png #/img/favicon.svg
+    favicon: /img/logo.svg #/img/favicon.svg
     # Open Graph metadata
     # https://hexo.io/docs/helpers.html#open-graph
     open_graph:
         # Page title (og:title) (optional)
         # You should leave this blank for most of the time
-        title: 辣椒の酱
+        title: ChenYu-K
         # Page type (og:type) (optional)
         # You should leave this blank for most of the time
         type: blog
         # Page URL (og:url) (optional)
         # You should leave this blank for most of the time
-        url: https://removeif.github.io/
+        url: https://chenyu-k.github.io/
         # Page cover (og:image) (optional)
         # You should leave this blank for most of the time
-        image: https://cdn.jsdelivr.net/gh/removeif/removeif-demo@latest/img/avatar.png
+        image: /img/kaede.jpg
         # Site name (og:site_name) (optional)
         # You should leave this blank for most of the time
-        site_name: 辣椒の酱
+        site_name: ChenYu-K
         # Page author (article:author) (optional)
         # You should leave this blank for most of the time
-        author: removeif
+        author: ChenYu
         # Page description (og:description) (optional)
         # You should leave this blank for most of the time
         description: 
@@ -82,16 +82,14 @@ navbar:
         Friend: /friend
         Message: /message
         Self-talking: /self-talking
-        Music: /music
-        Media: /media
     # Links to be shown on the right of the navigation bar
     links:
         Join Gitter:
             icon: fab fa-gitter
-            url: 'https://gitter.im/hexo-theme-amazing/community'
-        Download on GitHub:
+            url: 'https://gitter.im/ChenYu-K/community#'
+        My GitHub:
             icon: fab fa-github
-            url: 'https://github.com/removeif/hexo-theme-amazing'
+            url: 'https://github.com/ChenYu-K'
 # Page footer configurations
 footer:
     # Links to be shown on the right of the footer section
@@ -104,7 +102,7 @@ footer:
             url: 'https://creativecommons.org/licenses/by/4.0/'
         Download on GitHub:
             icon: fab fa-github
-            url: 'https://github.com/removeif/hexo-theme-amazing'
+            url: 'https://github.com/ChenYu-K'
 # Article related configurations
 article:
     # Code highlight settings
@@ -144,14 +142,14 @@ search:
 comment:
     type: gitalk
     language: zh-CN #zh-CN #Localization language key, en, zh-CN and zh-TW are currently available.
-    owner: removeif         # (required) GitHub user name
-    repo: blog_comment          # (required) GitHub repository name
-    client_id: 46a9f3481b46ea0129d8     # (required) OAuth application client id
-    client_secret: 79c7c9cb847e141757d7864453bcbf89f0655b24 # (required) OAuth application client secret
-    admin: ['removeif']
+    owner: ChenYu-K         # (required) GitHub user name
+    repo: ChenYu-K.github.io          # (required) GitHub repository name
+    client_id: eeccaadc8ba876b69c84     # (required) OAuth application client id
+    client_secret: 4c250bf612f26889b183b33b0176659deb6a4c34 # (required) OAuth application client secret
+    admin: ['ChenYu']
     create_issue_manually: true
     distraction_free_mode: false
-    has_hot_recommend: true # 是否有热门推荐
+    has_hot_recommend: false # 是否有热门推荐
     has_latest_comment: true #是否有最新评论
     proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token #解决登录后403问题
 # comment:
@@ -179,19 +177,19 @@ comment:
 
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
-donates:
-  # Alipay donate button configurations
-    -
-        # Donation entry name
-        type: alipay
-        # Qrcode image URL
-        qrcode: 'https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190802135456.png'
-    -
-        # Donation entry name
-        type: wechat
-        # Qrcode image URL
-        qrcode: 'https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190802135550.png'
-    # "Buy me a coffee" donate button configurations
+    # donates:
+    # # Alipay donate button configurations
+    # -
+    #     # Donation entry name
+    #     type: alipay
+    #     # Qrcode image URL
+    #     qrcode: 'https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190802135456.png'
+    # -
+    #     # Donation entry name
+    #     type: wechat
+    #     # Qrcode image URL
+    #     qrcode: 'https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190802135550.png'
+    # # "Buy me a coffee" donate button configurations
 #    -
 #        type: buymeacoffee
 #        # URL to the "Buy me a coffee" page
@@ -246,33 +244,33 @@ widgets:
         position: left
         type: profile
         # Author name
-        author: 辣椒の酱
+        author: ChenYu-K
         # Author title
-        author_title: 尚未执佩剑，转眼即江湖
+        author_title: Memento Moir
         # Author's current location
-        location: 阿尔及利亚
+        location: JP
         # URL or path to the avatar image
-        avatar: https://cdn.jsdelivr.net/gh/removeif/removeif-demo@latest/img/avatar.png
+        avatar: /img/kaede.jpg
         # Whether show the rounded avatar image
         avatar_rounded: true
         # Email address for the Gravatar
         gravatar: 
         # URL or path for the follow button
-        follow_link: 'https://github.com/ppoffice'
+        follow_link: 'https://github.com/ChenYu-K'
         # Links to be shown on the bottom of the profile widget
         social_links:
             Github:
                 icon: fab fa-github
-                url: 'https://github.com/removeif'
+                url: 'https://github.com/ChenYu-K'
             Weibo:
                 icon: fab fa-weibo
-                url: 'https://weibo.com/removeif'
+                url: 'https://weibo.com/'
             Email:
                 icon: fa fa-envelope
-                url: 'mailto:removeif@163.com'
+                url: 'mailto:cy519234505@gmail.com'
             Next:
                 icon: fab fa-dribbble
-                url: 'https://removeif.github.io/remove.io'
+                url: 'https://blog.csdn.net/kaede0v0'
             RSS:
                 icon: fas fa-rss
                 url: /atom.xml
@@ -285,7 +283,7 @@ widgets:
         # Names and URLs of the sites
         links:
             Hexo: 'https://hexo.io'
-            Bulma: 'https://bulma.io'
+            OCU bridge: 'http://brdg.civil.eng.osaka-cu.ac.jp/'
     # Latest comment widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
@@ -329,7 +327,7 @@ widgets:
 # AdSense client ID
 adsense_client_id: #'ca-pub-6343805421927634'
 # AdSense AD unit ID
-adsense_slot_id: '5134765588'
+adsense_slot_id: ''
 # article head ad
 article_head_has_ad: true
 # comment head ad
@@ -381,7 +379,7 @@ plugins:
     # http://outdatedbrowser.com/
     outdated_browser: false
     # Show a progress bar at top of the page on page loading
-    progressbar: true
+    progressbar: false
 # CDN provider settings
 # https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
 providers:
@@ -396,9 +394,9 @@ providers:
 
 
 footer_copyright_dsec: © 版权说明：[本网站所有内容均收集于互联网或自己创作,<br />&nbsp;&nbsp;&nbsp;&nbsp;方便于网友与自己学习交流，如有侵权，请<a href="/message" target="_blank">留言</a>，立即处理]<br /> #footer 版权说明 可自由配置
-website_start_time: 2018/11/11 00:00:00 #网站运行开始时间,不填不显示
-footer_registered_no: 川ICP备88888888号-8（测试） #备案号
+website_start_time: 2021/07/31 00:00:00 #网站运行开始时间,不填不显示
+footer_registered_no:  #备案号
 side_music_netease_id: 2364053447 #侧边栏网易云歌单id
 busuanzi_only_count: false #当上面plugins中busuanzi: true时，此配置busuanzi_only_count为true时，网站不显示不蒜子统计数据，但是会每次统计。false时显示统计数据。
-has_live_2D_switch: true #live2D开关 true-开 false-关
+has_live_2D_switch: false #live2D开关 true-开 false-关
 use_pjax: true #是否pjax

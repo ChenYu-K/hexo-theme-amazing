@@ -154,7 +154,7 @@ module.exports = class extends Component {
                 <Search config={config} helper={helper} />
                 {use_pjax ? <script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script> : null}
                 {use_pjax ? <script type="text/javascript" dangerouslySetInnerHTML={{ __html: pjaxJs }}></script> : null}
-                {isMath ? <script type="text/javascript" dangerouslySetInnerHTML={{ __html: mathJaxJs }}></script> : null}
+                <script type="text/javascript" src="/js/src/snow.js"></script>
             </body>
         </html>;
     }
