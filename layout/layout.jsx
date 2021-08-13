@@ -6,7 +6,7 @@ const Widgets = require('./common/widgets');
 const Footer = require('./common/footer');
 const Scripts = require('./common/scripts');
 const Search = require('./common/search');
-
+                  
 module.exports = class extends Component {
     render() {
         const { site, config, page, helper, body } = this.props;
@@ -154,7 +154,11 @@ module.exports = class extends Component {
                 <Search config={config} helper={helper} />
                 {use_pjax ? <script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script> : null}
                 {use_pjax ? <script type="text/javascript" dangerouslySetInnerHTML={{ __html: pjaxJs }}></script> : null}
-                <script type="text/javascript" src="/js/src/snow.js"></script>
+
+                <script type="text/javascript" src="/js/scr/snow.js"></script>
+                <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+                <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+                <script type="text/javascript" src="/js/scr/fireworks.js"></script>
             </body>
         </html>;
     }
