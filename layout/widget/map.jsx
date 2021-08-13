@@ -1,3 +1,5 @@
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/7.js?i=5qe87qaceim&amp;m=0&amp;c=007eff&amp;cr1=54ff00&amp;sx=0" async="async"></script>
+
 const { Component } = require('inferno');
 const gravatrHelper = require('hexo-util').gravatar;
 const { cacheComponent } = require('hexo-component-inferno/lib/util/cache');
@@ -94,10 +96,7 @@ class Profile extends Component {
                     <p id="hitokoto">:D 一言句子获取中...</p>
                     <script type="text/javascript" dangerouslySetInnerHTML={{ __html: hitokotoJs }} defer={true}></script>
                 </div> : null}
-                {/* <div class="card-content">
-                    <canvas id="canvas" style = "width: 100%"></canvas>
-                    <script src="/js/scr/clock.js"></script>    
-                </div> */}
+
             </div>
         </div>;
     }

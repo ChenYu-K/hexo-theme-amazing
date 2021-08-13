@@ -46,6 +46,7 @@ class Navbar extends Component {
                         {navbarLogo}
                     </a>
                 </div>
+
                 <div class="navbar-menu">
                     {Object.keys(menu).length ? <div class="navbar-start">
                         {Object.keys(menu).map(name => {
@@ -70,7 +71,7 @@ class Navbar extends Component {
                         </a> : null}
                         <a class="navbar-item" id="night-nav" title="Night Mode" href="javascript:;">
                             <i class="fas fa-moon" id="night-icon"></i>
-                        </a>
+                        </a> 
                     </div>
                 </div>
             </div>
